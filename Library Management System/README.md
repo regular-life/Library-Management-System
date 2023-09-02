@@ -20,6 +20,8 @@ This is a simple readme document to help you understand the Library Management S
      ```bash
      git clone https://github.com/regular-life/AP-Assignments.git
      ```
+     **OR**
+   - Download the .zip file from https://github.com/regular-life/AP-Assignments.
 
 3. **Opening the Project in IntelliJ:**
    - Open IntelliJ IDEA.
