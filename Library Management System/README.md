@@ -147,6 +147,4 @@ The code is structured into two main classes: `Book` and `Member`. These classes
 
 Feel free to [reach out to me](mailto:yash22586@iiitd.ac.in) for any questions or issues related to the project.
 
----
-
 If you encounter any issues or have suggestions for improvement, please [let me know](mailto:yash22586@iiitd.ac.in).
