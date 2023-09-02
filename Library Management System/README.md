@@ -97,12 +97,12 @@ The code is structured into two main classes: `Book` and `Member`. These classes
 
 ### Class: Book
 
-   1. Attributes:
+   1. **Attributes:**
      - `title` (String): The title of the book.
      - `author` (String): The author of the book.
      - `book_id` (int): An identifier for the book.
      - `status` (int): Represents the status of the book (0 for available, current time(in seconds) for issued books).
-  2. Constructor:
+  2. **Constructor:**
      The Book class has a constructor that initializes the book's attributes when a new book object is created.
       ```cpp
           Book(String title, String author, int book_id)
@@ -115,14 +115,14 @@ The code is structured into two main classes: `Book` and `Member`. These classes
       ```
 
 ### Class: Member
-  1. Attributes:
+  1. **Attributes:**
     - `name` (String): The name of the member.
     - `phone` (String): The phone number of the member.
     - `member_id` (int): An identifier for the member.
     - `fine` (int): Represents the fine amount associated with the member. Fine of ₹ 3/day is charged for every day after 10 days. (NOTE: The program is made so that 1s in real world equals 1 day for the program.)
     - `age` (int): The age of the member.
     - `books_issued_id` (Vector<Book>): A collection of books issued by the member.
-  2. Constructor:
+  2. **Constructor:**
      The Member class has a constructor that initializes the member's attributes when a new member object is created.
      ```cpp
      Member(String name, String phone, int member_id, int age)
@@ -135,7 +135,7 @@ The code is structured into two main classes: `Book` and `Member`. These classes
          this.age = age ;
      }
      ```
-  3. Methods:
+  3. **Methods:**
      The Member class contains several methods to interact with the library system:
      - `issueBook(Vector<Book> List_Books)`: Allows a member to issue a book if they meet certain conditions (no outstanding fine and number of books already issued is not more than one).
      - `returnBook(Vector<Book> List_Books)`: Allows a member to return a book and calculate fines if it's returned after the due date.
