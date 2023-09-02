@@ -378,7 +378,6 @@ public class Main
                         if (entry.getValue().member_id == member_id) 
                         {
                             List_Members.remove(entry.getKey()) ;
-                            System.out.println("Member removed successfully!") ;
                             member_exist = 1 ;
                             break ;
                         }
@@ -431,7 +430,6 @@ public class Main
                         if (listBook.book_id == book_id && listBook.title.equals(book_name)) 
                         {
                             List_Books.remove(listBook) ;
-                            System.out.println("Book removed successfully!") ;
                             book_exist = 1 ;
                             break ;
                         }
