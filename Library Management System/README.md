@@ -27,7 +27,7 @@ This is a simple readme document to help you understand the Library Management S
 
 4. **Running the Application:**
    - Locate the `Main.java` file in the project.
-   - Right-click on `Main.java` and select "Run Main.main()".
+   - Right-click on `Main.java` and select `Run Main.main()`.
 
 5. **Using the Application:**
    - Follow the on-screen instructions to use the Library Management System as either a librarian or a member.
