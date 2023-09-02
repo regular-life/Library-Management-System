@@ -1,4 +1,4 @@
-# Library Management System Readme File
+# Library Management System
 
 ## Introduction
 This is a simple readme document to help you understand the Library Management System implemented in Java using Object-Oriented Programming (OOP) principles. The application allows users to interact with a library system as either a librarian or a member. It was developed using IntelliJ IDEA and Maven.
