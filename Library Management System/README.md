@@ -98,10 +98,10 @@ The code is structured into two main classes: `Book` and `Member`. These classes
 ### Class: Book
 
    1. **Attributes:**
-     - `title` (String): The title of the book.
-     - `author` (String): The author of the book.
-     - `book_id` (int): An identifier for the book.
-     - `status` (int): Represents the status of the book (0 for available, current time(in seconds) for issued books).
+      - `title` (String): The title of the book.
+      - `author` (String): The author of the book.
+      - `book_id` (int): An identifier for the book.
+      - `status` (int): Represents the status of the book (0 for available, current time(in seconds) for issued books).
   2. **Constructor:**
      The Book class has a constructor that initializes the book's attributes when a new book object is created.
       ```cpp
@@ -116,12 +116,12 @@ The code is structured into two main classes: `Book` and `Member`. These classes
 
 ### Class: Member
   1. **Attributes:**
-    - `name` (String): The name of the member.
-    - `phone` (String): The phone number of the member.
-    - `member_id` (int): An identifier for the member.
-    - `fine` (int): Represents the fine amount associated with the member. Fine of ₹ 3/day is charged for every day after 10 days. (NOTE: The program is made so that 1s in real world equals 1 day for the program.)
-    - `age` (int): The age of the member.
-    - `books_issued_id` (Vector<Book>): A collection of books issued by the member.
+     - `name` (String): The name of the member.
+     - `phone` (String): The phone number of the member.
+     - `member_id` (int): An identifier for the member.
+     - `fine` (int): Represents the fine amount associated with the member. Fine of ₹ 3/day is charged for every day after 10 days. (NOTE: The program is made so that 1s in real world equals 1 day for the program.)
+     - `age` (int): The age of the member.
+     - `books_issued_id` (Vector<Book>): A collection of books issued by the member.
   2. **Constructor:**
      The Member class has a constructor that initializes the member's attributes when a new member object is created.
      ```cpp
