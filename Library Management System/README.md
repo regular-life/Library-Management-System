@@ -147,6 +147,6 @@ The code is structured into two main classes: `Book` and `Member`. These classes
 ## Contributors
 - [Yash Bhardwaj](https://linktr.ee/yash_04) - [GitHub Profile](https://github.com/regular-life)
 
-Feel free to [reach out to me](mailto:yash22586@iiitd.ac.in) for any questions or issues related to the project.
+Feel free to reach out to me for any questions or issues related to the project.
 
-If you encounter any issues or have suggestions for improvement, please [let me know](mailto:yash22586@iiitd.ac.in).
+If you encounter any issues or have suggestions for improvement, please let me know at yash22586@iiitd.ac.in.
