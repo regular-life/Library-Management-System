@@ -2,7 +2,7 @@ import org.example.* ;
 
 import java.util.* ;
 import java.util.regex.* ;
-import java.util.Map.Entry ;
+import java.util.Map.* ;
 
 class Book
 {
