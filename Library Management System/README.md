@@ -142,6 +142,48 @@ The code is structured into two main classes: `Book` and `Member`. These classes
      - `listMyBooks()`: Lists the books issued by the member.
      - `payFine()`: Allows the member to pay any outstanding fines.
 
+### Class: Main
+  1. **Main Method:**
+
+     - The main method is the entry point of the program. It starts by initializing various variables, data structures, and flags that will be used throughout the program.
+     - `flag` is used to determine the user's role (librarian or member) or if they want to exit the program.
+     - `Vector<Book> List_Books` stores information about books using a dynamic array-like structure.
+     - `HashMap<Integer, Member> List_Members` stores information about members using a key-value pair structure.
+     - `curr` is an object of the `Member` class representing the current user (initialized as an empty member).
+     - `m_to_khaali_hu_bhai` is another `Member` object used as a placeholder. It is always an empty member and is never changed.
+     - `books_count` and `members_count` keep track of the total number of books and members.
+     - `prev_flag` is used to remember the previous user role or state. This is helpful for user login and remembering the previous state.
+
+  2. **Main Menu Loop:**
+
+     - The program enters an infinite loop controlled by the `while (true)` statement, which serves as the main menu.
+     - If `flag` is `0`, it displays the main menu options, reads the user's choice, and sets flag accordingly.
+     - Depending on the user's role (librarian or member), different sub-menus are displayed.
+
+  3. **Librarian Options (flag == 1):**
+
+     - The librarian menu displays options to register members, remove members, add books, remove books, view member information, and view all books.
+     - Input validation is implemented using try-catch blocks, ensuring that the user enters valid choices and data. Regex is used to ensure that name, phone number are practically valid.
+     - When registering a member or adding a book, data is collected from the user and stored in the respective data structures.
+
+  4. **Member Options (flag == 2):**
+
+     - The member menu allows members to perform actions such as listing available books, listing their own books, issuing books, returning books, paying fines, and going back to the previous menu.
+     - Similar to the librarian menu, input validation is applied here to ensure valid choices and data entry. Regex is used to ensure that name, phone number are practically valid.
+
+  5. **Exiting the Program (flag == 3):**
+
+     - If the user selects to exit (flag == 3), the program exits the infinite loop, terminating the application.
+
+  6. **Input Validation:**
+
+     - Input validation is applied throughout the code to ensure that the user enters valid data. For example, when entering member names, ages, and phone numbers, regex is used to validate the format.
+
+  7. **Data Storage:**
+
+     - Information about books and members is stored in the `List_Books vector` and `List_Members hash map`, respectively.
+     - Integers `books_count` and `members_count` are used to store the number of books and members, respectively.
+
 
 ## Contributors
 - [Yash Bhardwaj](https://linktr.ee/yash_04) - [GitHub Profile](https://github.com/regular-life)
