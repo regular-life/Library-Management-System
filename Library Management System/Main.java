@@ -76,7 +76,7 @@ class Member
                     }
                     catch (InputMismatchException e) 
                     {
-                        System.out.println("Invalid choice. Please enter an integer.") ;
+                        System.out.println("Invalid Book ID. Please enter an integer.") ;
                         sc.nextLine() ; 
                     }
                 }
@@ -120,7 +120,7 @@ class Member
                 }
                 catch (InputMismatchException e) 
                 {
-                    System.out.println("Invalid choice. Please enter an integer.") ;
+                    System.out.println("Invalid Book ID. Please enter an integer.") ;
                     sc.nextLine() ; 
                 }
             }
@@ -249,6 +249,7 @@ class Member
         else 
         {
             System.out.println("You had a total fine of Rs." + this.fine + " .It has been paid successfully!") ;
+            this.fine = 0 ;
         }
     }
 }
@@ -276,7 +277,20 @@ public class Main
                         "2. Enter as a member\n" +
                         "3. Exit\n" +
                         "---------------------------------") ;
-                flag = sc.nextInt() ;
+                while (true)
+                {
+                    try
+                    {
+                        flag = sc.nextInt() ;
+                        sc.nextLine() ;
+                        break ;
+                    }
+                    catch (InputMismatchException e)
+                    {
+                        System.out.println("Invalid option. Please enter an integer.") ;
+                        sc.nextLine() ;
+                    }
+                }
             }
             else if (flag == 1) 
             {
@@ -333,11 +347,12 @@ public class Main
                         try
                         {
                             age = sc.nextInt() ;
+                            sc.nextLine() ;
                             break ;
                         }
                         catch (InputMismatchException e)
                         {
-                            System.out.println("Invalid age. Please enter an integer.") ;
+                            System.out.println("Invalid integer. Please enter an integer.") ;
                             sc.nextLine() ;
                         }
                     }
@@ -402,7 +417,21 @@ public class Main
                     new_book.author = sc.nextLine() ;
 
                     System.out.print("3. Copies: ") ;
-                    int copies = sc.nextInt() ;
+                    int copies ;
+                    while (true)
+                    {
+                        try
+                        {
+                            copies = sc.nextInt() ;
+                            sc.nextLine() ;
+                            break ;
+                        }
+                        catch (InputMismatchException e)
+                        {
+                            System.out.println("Invalid integer. Please enter an integer.") ;
+                            sc.nextLine() ;
+                        }
+                    }
                     for (int i = 0 ; i < copies ; i++) 
                     {
                         Book temp = new Book(new_book.title, new_book.author, books_count) ;
@@ -417,8 +446,21 @@ public class Main
                 else if (librarian_choice == 4) 
                 {
                     System.out.print("Book ID: ") ;
-                    int book_id = sc.nextInt() ;
-                    sc.nextLine() ;
+                    int book_id ;
+                    while (true)
+                    {
+                        try
+                        {
+                            book_id = sc.nextInt() ;
+                            sc.nextLine() ;
+                            break ;
+                        }
+                        catch (InputMismatchException e)
+                        {
+                            System.out.println("Invalid Book ID. Please enter an integer.") ;
+                            sc.nextLine() ;
+                        }
+                    }
 
                     System.out.print("Book Name: ") ;
                     String book_name = sc.nextLine() ;
@@ -637,6 +679,9 @@ public class Main
             }
             else if (flag == 3) 
             {
+                System.out.println("---------------------------------\n" +
+                        "Thanks for visiting!\n" +
+                        "---------------------------------");
                 break ;
             }
             else 
