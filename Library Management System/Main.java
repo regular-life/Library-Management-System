@@ -523,10 +523,12 @@ public class Main
                     System.out.println("---------------------------------\nBooks in the library are: ") ;
                     for (Book listBook : List_Books)
                     {
-                        System.out.println("Book Title: " + listBook.title) ;
-                        System.out.println("Book Author: " + listBook.author) ;
-                        System.out.println("Book ID: " + listBook.book_id) ;
-                        System.out.println() ;
+                        if (listBook.status == 0) {
+                            System.out.println("Book Title: " + listBook.title);
+                            System.out.println("Book Author: " + listBook.author);
+                            System.out.println("Book ID: " + listBook.book_id);
+                            System.out.println();
+                        }
                     }
                     System.out.println("---------------------------------") ;
                 }
