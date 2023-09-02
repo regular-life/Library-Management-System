@@ -117,7 +117,7 @@ The code is structured into two main classes: `Book` and `Member`. These classes
     1. `name` (String): The name of the member.
     2. `phone` (String): The phone number of the member.
     3. `member_id` (int): An identifier for the member.
-    4. `fine` (int): Represents the fine amount associated with the member.
+    4. `fine` (int): Represents the fine amount associated with the member. Fine of ₹ 3/day for every day after 10 days. (NOTE: The program is made so that 1s in real world equals 1 day for the program.)
     5. `age` (int): The age of the member.
     6. `books_issued_id` (Vector<Book>): A collection of books issued by the member.
   - Constructor:
@@ -136,7 +136,7 @@ The code is structured into two main classes: `Book` and `Member`. These classes
   - Methods:
     The Member class contains several methods to interact with the library system:
 
-    1. `issueBook(Vector<Book> List_Books)`: Allows a member to issue a book if they meet certain conditions (e.g., no outstanding fine).
+    1. `issueBook(Vector<Book> List_Books)`: Allows a member to issue a book if they meet certain conditions (no outstanding fine and number of books already issued is not more than one).
     2. `returnBook(Vector<Book> List_Books)`: Allows a member to return a book and calculate fines if it's returned after the due date.
     3. `listMyBooks()`: Lists the books issued by the member.
     4. `payFine()`: Allows the member to pay any outstanding fines.
