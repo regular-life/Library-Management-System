@@ -540,7 +540,6 @@ public class Main
                 {
                     Member to_find = new Member("", "", 0, 0) ;
                     prev_flag = 2 ;
-                    sc.nextLine() ;
                     System.out.print("Member Name: ") ;
                     int name_valid = 0 ;
                     while (name_valid == 0) 
