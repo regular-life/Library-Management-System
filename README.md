@@ -18,10 +18,10 @@ This is a simple readme document to help you understand the Library Management S
 2. **Cloning the Repository:**
    - Clone the repository to your local machine using the following command:
      ```bash
-     git clone https://github.com/regular-life/AP-Assignments.git
+     git clone https://github.com/regular-life/Library-Management-System.git
      ```
      **OR**
-   - Download the .zip file from https://github.com/regular-life/AP-Assignments.
+   - Download the .zip file from https://github.com/regular-life/Library-Management-System.
 
 3. **Opening the Project in IntelliJ:**
    - Open IntelliJ IDEA.
